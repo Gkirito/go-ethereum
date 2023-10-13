@@ -132,6 +132,12 @@ func (arguments Arguments) copyAtomic(v interface{}, marshalledValues interface{
 	dst := reflect.ValueOf(v).Elem()
 	src := reflect.ValueOf(marshalledValues)
 
+	if dst.Kind() == reflect.Interface && dst.Elem().IsValid() && (dst.Elem().Type().Kind() == reflect.Ptr || dst.Elem().CanSet()) {
+		dst = dst.Elem()
+		if dst.Kind() == reflect.Pointer {
+			dst = dst.Elem()
+		}
+	}
 	if dst.Kind() == reflect.Struct {
 		return set(dst.Field(0), src)
 	}
@@ -142,7 +148,12 @@ func (arguments Arguments) copyAtomic(v interface{}, marshalledValues interface{
 func (arguments Arguments) copyTuple(v interface{}, marshalledValues []interface{}) error {
 	value := reflect.ValueOf(v).Elem()
 	nonIndexedArgs := arguments.NonIndexed()
-
+	if value.Kind() == reflect.Interface && value.Elem().IsValid() && (value.Elem().Type().Kind() == reflect.Ptr || value.Elem().CanSet()) {
+		value = value.Elem()
+		if value.Kind() == reflect.Pointer {
+			value = value.Elem()
+		}
+	}
 	switch value.Kind() {
 	case reflect.Struct:
 		argNames := make([]string, len(nonIndexedArgs))
