@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto/kzg4844"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/gkirito/go-ethereum/common"
+	"github.com/gkirito/go-ethereum/core"
+	"github.com/gkirito/go-ethereum/core/state"
+	"github.com/gkirito/go-ethereum/core/types"
+	"github.com/gkirito/go-ethereum/crypto/kzg4844"
+	"github.com/gkirito/go-ethereum/log"
+	"github.com/gkirito/go-ethereum/params"
 )
 
 // ValidationOptions define certain differences between transaction validation

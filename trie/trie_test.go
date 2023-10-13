@@ -29,13 +29,13 @@ import (
 	"testing/quick"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie/trienode"
+	"github.com/gkirito/go-ethereum/common"
+	"github.com/gkirito/go-ethereum/core/rawdb"
+	"github.com/gkirito/go-ethereum/core/types"
+	"github.com/gkirito/go-ethereum/crypto"
+	"github.com/gkirito/go-ethereum/ethdb"
+	"github.com/gkirito/go-ethereum/rlp"
+	"github.com/gkirito/go-ethereum/trie/trienode"
 	"golang.org/x/crypto/sha3"
 )
 

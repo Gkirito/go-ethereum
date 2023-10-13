@@ -22,15 +22,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/gkirito/go-ethereum/common"
+	"github.com/gkirito/go-ethereum/consensus/ethash"
+	"github.com/gkirito/go-ethereum/core"
+	"github.com/gkirito/go-ethereum/core/rawdb"
+	"github.com/gkirito/go-ethereum/core/types"
+	"github.com/gkirito/go-ethereum/core/vm"
+	"github.com/gkirito/go-ethereum/crypto"
+	"github.com/gkirito/go-ethereum/params"
+	"github.com/gkirito/go-ethereum/trie"
 )
 
 // Test chain parameters.

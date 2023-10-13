@@ -21,8 +21,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/ethereum/go-ethereum/les/utils"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/gkirito/go-ethereum/les/utils"
+	"github.com/gkirito/go-ethereum/rlp"
 )
 
 const (

@@ -25,12 +25,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/gkirito/go-ethereum"
+	"github.com/gkirito/go-ethereum/common"
+	"github.com/gkirito/go-ethereum/common/hexutil"
+	"github.com/gkirito/go-ethereum/core/types"
+	"github.com/gkirito/go-ethereum/internal/ethapi"
+	"github.com/gkirito/go-ethereum/rpc"
 )
 
 var (
